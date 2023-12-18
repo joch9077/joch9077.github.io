@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulari</title>
+        <link rel="stylesheet" href="../css/forms.css">
+    </head>
+    <body>
+        <h1>Practica Pt3 Formulari</h1>
+        <form action="form.php">
+            <fieldset class="bginfo">
+                <legend class="infobase">Información Basica</legend>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="altura">Altura (en cm):</label><br>
+                <input type="number" id="altura" name="altura" min="0" max="300"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="maildeejemplo@gmail.com"><br>
+                <label for="fecha">Fecha de Nacimiento:</label><br>
+                <input type="date" id="fecha" name="fecha"><br>
+            </fieldset>
+            <fieldset class="bgnacion">
+                <legend class="nacional">Nacionalidad</legend>
+                <input type="radio" id="nacionalidad" name="nacionalidad" value="Española">
+                <label for="Española">Española</label>
+                <input type="radio" id="nacionalidad" name="nacionalidad" value="Comunitario (UE)">
+                <label for="Comunitario (UE)">Comunitario (UE)</label>
+                <input type="radio" id="nacionalidad" name="nacionalidad" value="No Comunitario">
+                <label for="No Comunitario">No Comunitario</label>
+            </fieldset>
+            <fieldset class="bgestudios">
+                <legend font-type="large"><b><u>Estudios</u></b></legend>
+                <select id="estudios" name="estudios">
+                    <option value="ESO">ESO</option>
+                    <option value="GM">GM</option>
+                    <option value="GS">GS</option>
+                    <option value="Universidad">Universidad</option>
+                </select>
+            </fieldset>
+            <fieldset class="bgidiomas">
+                <legend class="idiomas">Idiomas</legend>
+                <input type="checkbox" id="idiomas[]" name="idiomas[]" value="catalán">
+                <label for="Catalán">Catalán</label>
+                <input type="checkbox" id="idiomas[]" name="idiomas[]" value="castellano">
+                <label for="castellano">Castellano</label>
+                <input type="checkbox" id="idiomas[]" name="idiomas[]" value="ingles">
+                <label for="ingles">Ingles</label>
+                <input type="checkbox" id="idiomas[]" name="idiomas[]" value="chino">
+                <label for="Chino">Chino</label>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar formulario">
+        </form>

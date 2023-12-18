@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: green;
+}
+.infobase {
+    font-size: large;
+    font-style: italic;
+    color: blue;
+}
+.nacional {
+    font-style: italic;
+    color: orange;
+}
+.idiomas {
+    font-style: italic;
+    color: darkred;
+}
+.bginfo {
+    background-color: lightsalmon;
+}
+.bgnacion {
+    background-color: springgreen;
+}
+.bgestudios {
+    background-color: lightpink;
+}
+.bgidiomas {
+    background-color: lightskyblue;
+}
