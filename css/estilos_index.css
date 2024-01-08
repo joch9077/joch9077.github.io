@@ -1,0 +1,38 @@
+header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: floralwhite;
+}
+li a {
+    display: block;
+    background-color: coral;
+    color: cadetblue;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: darksalmon;
+    color: lightskyblue;
+}
+main {
+    width: 50%;
+    background-color: darkseagreen;
+    color: plum;
+    text-align: center;
+    padding: 20px;
+}
+article {
+    width: 25%;
+}
+footer {
+    background-color: darkolivegreen;
+    text-align: center;
+    padding: 10px;
+}
