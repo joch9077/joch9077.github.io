@@ -1,38 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
 header {
     background-color: aquamarine;
     text-align: center;
     padding: 20px;
 }
+h1 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 nav {
+    float: left;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: floralwhite;
+    padding: 20px;
+    width: 20%;
+    background-color: purple;
 }
-li a {
+nav li a {
     display: block;
-    background-color: coral;
-    color: cadetblue;
+    background-color: darkorange;
+    color: crimson;
     padding: 8px 16px;
-    text-decoration: none;
 }
-li a:hover {
-    background-color: darksalmon;
-    color: lightskyblue;
+nav li a.top {
+    border-radius: 20px 20px 0px 0px ;
+}
+nav li a.bot {
+    border-radius: 0px 0px 20px 20px ;
+}
+nav li a:hover {
+    background-color: coral;
+    color: blue;
 }
 main {
-    width: 50%;
+    float: left;
+    width: 60%;
     background-color: darkseagreen;
-    color: plum;
+    color: blueviolet;
     text-align: center;
     padding: 20px;
+    height: 498px;
 }
 article {
-    width: 25%;
+    float: left;
+    width: 20%;
+    background-color: yellow;
+    padding: 20px;
+    height: 498px;
+}
+img {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 40%;
 }
 footer {
     background-color: darkolivegreen;
     text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+footer a {
+    background-color: orangered;
     padding: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    nav, main, article {
+      width: 100%;
+    }
+}
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
